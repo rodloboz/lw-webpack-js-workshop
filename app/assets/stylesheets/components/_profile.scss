@@ -1,0 +1,121 @@
+.profile-wrapper {
+  margin-top: 20px;
+  position: relative;
+}
+
+.profile {
+  margin-bottom: 20px;
+  box-shadow:  0 1px 7px rgba(0,0,0,.05);
+  background-size: cover !important;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.04)!important;
+  border-radius: 4px;
+}
+
+.profile-content {
+  position: relative;
+  width: 68%;
+  padding: 20px;
+}
+
+.profile-name {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.profile-main {
+  h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit;
+  }
+}
+
+.profile-bio {
+  margin-top: 20px;
+  p {
+    margin-left: 20px;
+  }
+}
+
+.profile-skills {
+  margin-top: 20px;
+}
+
+.profile-projects {
+  margin-top: 20px;
+  h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit;
+  }
+}
+
+.profile-widget {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  min-height: 250px;
+}
+
+.widget-heading {
+  width: 100%;
+  background: $blue;
+  padding: 30px;
+  position: relative;
+}
+
+.widget-content {
+  width: 100%;
+  padding: 20px;
+  .dates {
+    margin-bottom: 10px;
+  }
+
+  .costs {
+    margin-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 2000ms ease-in-out;
+  }
+
+  .costs.is-visible {
+    max-height: 999em;
+  }
+}
+
+.hourly-rate {
+  position: absolute;
+  left: 20px;
+  transform: translate(0,-50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  span {
+    font-size: 14px;
+    font-weight: light;
+    font-variant: small-caps;
+  }
+}
+
+.profile-portfolio {
+  position: relative;
+}
+
+.profile-tools {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  a {
+    color: inherit;
+  }
+  i {
+    opacity: 0.15;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+<div class="container">
+  <h4>Your developer's profile:</h4>
+  <div class="profile-wrapper">
+    <div class="profile profile-content">
+      <div class="profile-tools">
+        <%= link_to edit_developer_path(@developer) do %>
+          <%= icon('fas', 'user-edit', class: 'strong') %>
+        <% end %>
+      </div>
+      <div class="dev-avatar__name">
+        <%= image_tag avatar_url(@developer), class: "avatar-xxl avatar-bordered" %>
+        <div style="margin-left: 20px;">
+          <div class="profile-name">
+            <%= @developer.full_name %>
+          </div>
+          <div class="dev-username">
+            <%= icon('fab', 'github', class: 'strong') %>
+            <%= link_to @developer.github_username, "https://github.com/#{@developer.github_username}", target: "_blank", class: "dev-link" %>
+          </div>
+        </div>
+      </div>
+      <div class="profile-main">
+        <div class="profile-bio">
+          <h5>About</h5>
+          <p><%= @developer.bio %></p>
+        </div>
+        <div class="profile-skills">
+          <h5>Skills</h5>
+          <ul>
+            <% @developer.skills.each do |skill| %>
+              <li><%= skill.titleized_name %></li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <% if @developer.projects.any? %>
+      <div class="profile-wrapper">
+        <div class="profile profile-content profile-projects">
+          <h5>Portfolio</h5>
+        </div>
+      </div>
+      <div class="profile-portfolio">
+        <div id="js-projects">
+          <%= render @developer.projects %>
+        </div>
+        <div class="chevron chevron-right">
+          <%= icon('fas', 'chevron-right') %>
+        </div>
+        <div class="chevron chevron-left">
+          <%= icon('fas', 'chevron-left') %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
