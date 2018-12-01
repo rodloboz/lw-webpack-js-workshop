@@ -9,7 +9,7 @@ You can see the final result here :point_right: https://devhire-demo.herokuapp.c
 ```shell
  git clone git@github.com:YOUR_GITHUB_USERNAME/lw-webpack-js-workshop.git
  cd lw-webpack-js-workshop
- git add remote upstream https://github.com/rodloboz/lw-webpack-js-workshop.git
+ git remote add upstream https://github.com/rodloboz/lw-webpack-js-workshop.git
  rails db:create db:migrate db:seed
  rails server
 ```
