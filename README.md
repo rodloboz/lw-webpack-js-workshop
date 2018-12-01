@@ -4,7 +4,7 @@ You can see the final result here :point_right: https://devhire-demo.herokuapp.c
 
 ## Setup
 
-[Fork this repo on github](https://github.com/user_name_here/repo_name_here/fork)
+[Fork this repo on github](https://github.com/rodloboz/lw-webpack-js-workshop/fork)
 
 ```shell
  git clone git@github.com:YOUR_GITHUB_USERNAME/lw-webpack-js-workshop.git
