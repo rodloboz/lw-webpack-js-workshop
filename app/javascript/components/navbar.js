@@ -1,7 +1,7 @@
 const changeNavbar = function() {
     window.addEventListener('scroll', function(event) {
         let position = window.scrollY;
-        console.log(position);
+        // console.log(position);
         const navBar = this.document.querySelector(".navbar-wagon");
         let windowHeight = window.innerHeight;
 
