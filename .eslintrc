@@ -7,10 +7,6 @@
     "browser": true
   },
 
-  "rules": {
-    "prettier/prettier": "error"
-  },
-
   "parser": "babel-eslint",
 
   "settings": {
