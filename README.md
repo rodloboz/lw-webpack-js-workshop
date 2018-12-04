@@ -148,7 +148,7 @@ Read the documentation and have a look at the examples here :point_right: https:
 
 `yarn add flatpickr` to install the npm package and then create a `booking.js` component file and `import flatpickr from 'flatpickr'`.
 
-**Note:** `flatpikr` comes with it's own css styling, so we'll need to load it in `app/javascript/packs/application.css`:
+**Note:** `flatpickr` comes with it's own css styling, so we'll need to load it in `app/javascript/packs/application.css`:
 
 ```scss
 @import 'flatpickr/dist/flatpickr.css';
@@ -156,7 +156,7 @@ Read the documentation and have a look at the examples here :point_right: https:
 
 You will need to create two instances of flatpickr: one for the **start date** and another for the **end date**. The selectors you want to target for each of these are the classes `booking_start_date` and `booking_end_date`.
 
-To create an instance of `flatpikr`, pass the input element via a **selector** and an object `{}` of **options** to `flatpickr`. There are several options available, from specifying the `minDate` and `dateFormat` to providing _callback_ functions on specific **events** like in the example below:
+To create an instance of `flatpickr`, pass the input element via a **selector** and an object `{}` of **options** to `flatpickr`. There are several options available, from specifying the `minDate` and `dateFormat` to providing _callback_ functions on specific **events** like in the example below:
 
 ```javascript
 flatpickr(inputSelector, {
@@ -182,7 +182,7 @@ Here's what we're going for:
 
 On the inital page load, the costs element (`.costs`) is not visible. After the user has picked the _end date_ you should **calculate** and **update** the costs and make this element visible by adding the class `is-visible`.
 
-**Hint:** You might want to use the flatpikr event `onChange`.
+**Hint:** You might want to use the flatpickr event `onChange`.
 
 Define a function `updateCosts` which received the number of `hours` booked, which is difference in days between the `endDate` and the `startDate` times *6*.
 
@@ -288,7 +288,7 @@ Create a `subnav.js` file and implement the behaviour in a function `animateSubn
 
 ## 10 - Filtering results with a range slider (`nouislider`)
 
-Finally, we want to add the possibility to filter our search results in `index#devevelopers` by providing a price/hourly rate range using a **range slider** in the UI.
+Finally, we want to add the possibility to filter our search results in `index#developers` by providing a price/hourly rate range using a **range slider** in the UI.
 
 There are many range sliders libraries, namely as jQuery plugins, but some require setting up jQuery UI in webpack which can be a bit cumbersome.
 
